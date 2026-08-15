@@ -1,6 +1,7 @@
 ---
 layout: post
 title: AI Agents, TDD and the path to reliable iterative development
+image: public/imgs/tdd-og.png
 ---
 
 For years and years, I have been practicing Test Driven Development (TDD) in various styles and with various languages with different levels of success. In some languages (Ruby I'm looking at you), I don't really understand how people develop without TDD - there are too many gotchas. In other languages like Go or Typescript, I understand why TDD isn't as widely adopted (though I think it's easy to argue that it should be).

@@ -1,6 +1,7 @@
 ---
 layout: post
 title: tmuxinator templates
+image: public/imgs/mux-og.png
 ---
 
 I've used [tmuxinator](https://github.com/tmuxinator/tmuxinator) for years to spin up a tmux session with the windows and panes I want already laid out - editor, server, scratch, whatever the project needs. My problem was that I only ever had one config, `~/.tmuxinator.yml`, and I'd hand edit it every time I switched projects. New repo, same dance - open the yml, rename windows, change the root path, remember what I changed last time so I could change it back. That's not automation, that's just moving the manual work somewhere else.  The benefit here is every project I have is configured this way so when I `cd` into something, I simply run `mux` and I have everything ready to go.
