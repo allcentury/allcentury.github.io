@@ -13,11 +13,7 @@ Let's walk through an example. I asked Claude to implement an `InventoryManager`
 
 The prompt:
 
-```
-Implement an InventoryManager class in Typescript. It should support
-adding stock for a SKU, removing stock for a SKU, and reading the
-current stock level for a SKU.
-```
+> Implement an InventoryManager class in Typescript. It should support adding stock for a SKU, removing stock for a SKU, and reading the current stock level for a SKU.
 
 Here's what came back:
 
@@ -62,13 +58,7 @@ Same ask, but this time I told Claude to agree on the tests with me before writi
 
 The prompt:
 
-```
-Let's implement an InventoryManager class in Typescript, but write the
-tests first. It should support adding stock for a SKU, removing stock
-for a SKU, and reading the current stock level. We should agree on happy path cases
-and unhappy path and there should be tests for both.  Lets align on the tests one by one
-before writing the implementation.
-```
+> Let's implement an InventoryManager class in Typescript, but write the tests first. It should support adding stock for a SKU, removing stock for a SKU, and reading the current stock level. We should agree on happy path cases and unhappy path and there should be tests for both. Lets align on the tests one by one before writing the implementation.
 
 The tests Claude proposed:
 
