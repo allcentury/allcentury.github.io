@@ -59,20 +59,15 @@ html {
 }
 
 body {
-  color: #e6e6e6;
-  background-color: #282a36;
+  color: #515151;
+  background-color: #fff;
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
 
-::selection {
-  background-color: #44475a;
-  color: #f8f8f2;
-}
-
 /* No `:visited` state is required by default (browsers will use `a`) */
 a {
-  color: #bd93f9;
+  color: #268bd2;
   text-decoration: none;
 }
 a strong {
@@ -81,7 +76,6 @@ a strong {
 /* `:focus` is linked to `:hover` for basic accessibility */
 a:hover,
 a:focus {
-  color: #ff79c6;
   text-decoration: underline;
 }
 
@@ -90,7 +84,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: .5rem;
   font-weight: bold;
   line-height: 1.25;
-  color: #f8f8f2;
+  color: #313131;
   text-rendering: optimizeLegibility;
 }
 h1 {
@@ -116,7 +110,7 @@ p {
 }
 
 strong {
-  color: #f8f8f2;
+  color: #303030;
 }
 
 
@@ -138,19 +132,19 @@ hr {
   position: relative;
   margin: 1.5rem 0;
   border: 0;
-  border-top: 1px solid #44475a;
-  border-bottom: 1px solid #282a36;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #fff;
 }
 
 abbr {
   font-size: 85%;
   font-weight: bold;
-  color: #6272a4;
+  color: #555;
   text-transform: uppercase;
 }
 abbr[title] {
   cursor: help;
-  border-bottom: 1px dotted #44475a;
+  border-bottom: 1px dotted #e5e5e5;
 }
 
 /* Code */
@@ -161,8 +155,8 @@ pre {
 code {
   padding: .25em .5em;
   font-size: 85%;
-  color: #50fa7b;
-  background-color: #21222c;
+  color: #bf616a;
+  background-color: #f9f9f9;
   border-radius: 3px;
 }
 pre {
@@ -176,7 +170,7 @@ pre {
   white-space: pre-wrap;
   word-break: break-all;
   word-wrap: break-word;
-  background-color: #21222c;
+  background-color: #f9f9f9;
 }
 pre code {
   padding: 0;
@@ -220,8 +214,8 @@ pre code {
 blockquote {
   padding: .5rem 1rem;
   margin: .8rem 0;
-  color: #6272a4;
-  border-left: .25rem solid #bd93f9;
+  color: #7a7a7a;
+  border-left: .25rem solid #e5e5e5;
 }
 blockquote p:last-child {
   margin-bottom: 0;
@@ -244,17 +238,17 @@ img {
 table {
   margin-bottom: 1rem;
   width: 100%;
-  border: 1px solid #44475a;
+  border: 1px solid #e5e5e5;
   border-collapse: collapse;
 }
 td,
 th {
   padding: .25rem .5rem;
-  border: 1px solid #44475a;
+  border: 1px solid #e5e5e5;
 }
 tbody tr:nth-child(odd) td,
 tbody tr:nth-child(odd) th {
-  background-color: #21222c;
+  background-color: #f9f9f9;
 }
 
 
@@ -280,8 +274,8 @@ tbody tr:nth-child(odd) th {
 .message {
   margin-bottom: 1rem;
   padding: 1rem;
-  color: #f8f8f2;
-  background-color: #21222c;
+  color: #717171;
+  background-color: #f9f9f9;
 }
 
 
@@ -314,15 +308,15 @@ tbody tr:nth-child(odd) th {
 .masthead-title {
   margin-top: 0;
   margin-bottom: 0;
-  color: #f8f8f2;
+  color: #505050;
 }
 .masthead-title a {
-  color: #f8f8f2;
+  color: #505050;
 }
 .masthead-title small {
   font-size: 75%;
   font-weight: 400;
-  color: #6272a4;
+  color: #c0c0c0;
   letter-spacing: 0;
 }
 
@@ -343,7 +337,7 @@ tbody tr:nth-child(odd) th {
 .page-title,
 .post-title,
 .post-title a {
-  color: #f8f8f2;
+  color: #303030;
 }
 .page-title,
 .post-title {
@@ -355,14 +349,14 @@ tbody tr:nth-child(odd) th {
   display: block;
   margin-top: -.5rem;
   margin-bottom: 1rem;
-  color: #6272a4;
+  color: #9a9a9a;
 }
 
 /* Related posts */
 .related {
   padding-top: 2rem;
   padding-bottom: 2rem;
-  border-top: 1px solid #44475a;
+  border-top: 1px solid #eee;
 }
 .related-posts {
   padding-left: 0;
@@ -373,10 +367,10 @@ tbody tr:nth-child(odd) th {
 }
 .related-posts li small {
   font-size: 75%;
-  color: #6272a4;
+  color: #999;
 }
 .related-posts li a:hover {
-  color: #ff79c6;
+  color: #268bd2;
   text-decoration: none;
 }
 .related-posts li a:hover small {
@@ -396,7 +390,7 @@ tbody tr:nth-child(odd) th {
   margin-left: -1rem;
   margin-right: -1rem;
   font-family: "PT Sans", Helvetica, Arial, sans-serif;
-  color: #6272a4;
+  color: #ccc;
   text-align: center;
 }
 
@@ -404,7 +398,7 @@ tbody tr:nth-child(odd) th {
 .pagination-item {
   display: block;
   padding: 1rem;
-  border: 1px solid #44475a;
+  border: 1px solid #eee;
 }
 .pagination-item:first-child {
   margin-bottom: -1px;
@@ -412,7 +406,7 @@ tbody tr:nth-child(odd) th {
 
 /* Only provide a hover state for linked pagination items */
 a.pagination-item:hover {
-  background-color: #21222c;
+  background-color: #f5f5f5;
 }
 
 @media (min-width: 30em) {
