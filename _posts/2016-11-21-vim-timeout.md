@@ -7,13 +7,13 @@ I have been using [ctrlp](https://github.com/kien/ctrlp.vim) with [ag](https://g
 
 Whenever I open vim, I instantly hit `<leader> f` to bring up a file list. Here's a quick screenshot:
 
-![ctrlp](http://i.imgur.com/BpJhEbI.png)
+![ctrlp](/public/imgs/vim-timeout-ctrlp-filelist.png)
 
 Using the fuzzy finder:
 
-![ctrlp2](http://i.imgur.com/ry1q5AP.png)
+![ctrlp2](/public/imgs/vim-timeout-ctrlp-search.png)
 
-Great - that is a joy to code with.  If you see [my post below]({{ site.github.url }}{% post_url 2016-11-17-vim-javascript-es6 %}) on my vim shortcut to replace `function`'s with ES6 fat arrows, I ran into something with my vim setup that was unsuspected.
+Great - that is a joy to code with.  If you see [my post below](/2016/11/17/vim-javascript-es6/) on my vim shortcut to replace `function`'s with ES6 fat arrows, I ran into something with my vim setup that was unsuspected.
 
 Prior to that post, I had my fuzzy finder mapped to `<leader>f`, as shown here in my `~/.vimrc`:
 
