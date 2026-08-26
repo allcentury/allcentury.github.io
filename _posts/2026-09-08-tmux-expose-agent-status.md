@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Making tmux.expose agent-aware
+published: false
 ---
 
 Somewhere between the last two posts on my tmux setup, I picked up [tmux.expose](https://github.com/cesarferreira/tmux.expose), a Mission Control style session switcher, live terminal previews of every session in a grid, jump to the one you want. It pairs nicely with `mux`, `mux` gets each project into its own session, tmux.expose is how I actually find the one I want among a dozen running at once.
