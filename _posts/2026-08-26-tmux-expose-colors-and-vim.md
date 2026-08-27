@@ -3,7 +3,7 @@ layout: post
 title: Making tmux.expose match my setup
 ---
 
-Not every PR I've sent to [tmux.expose](https://github.com/cesarferreira/tmux.expose) is about AI agents, I've got a post coming up on agent-aware tmux sessions and once [that PR lands](https://github.com/cesarferreira/tmux.expose/pull/6) I'll write a post about it.  This post is about adding vim navigation + custom colors to tmux.expose.
+Not every PR I've sent to [tmux.expose](https://github.com/cesarferreira/tmux.expose) is about AI agents, I've [got a post coming](/2026/08/27/tmux-expose-agent-status/) on agent-aware tmux sessions too. This post is about adding vim navigation + custom colors to tmux.expose.
 
 ## Configurable colors
 

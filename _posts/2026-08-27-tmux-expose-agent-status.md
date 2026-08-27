@@ -1,16 +1,13 @@
 ---
 layout: post
 title: Making tmux.expose agent-aware
-published: false
 ---
 
-Somewhere between the last two posts on my tmux setup, I picked up [tmux.expose](https://github.com/cesarferreira/tmux.expose), a Mission Control style session switcher, live terminal previews of every session in a grid, jump to the one you want. It pairs nicely with `mux`, `mux` gets each project into its own session, tmux.expose is how I actually find the one I want among a dozen running at once.
+Landed another feature in tmux.expose this week, it really has become a great way for me to manage my worktrees + agents.  Below is how I added a more agent-aware workflow.
 
-It's also a Rust TUI, and I don't write a ton of Rust day to day, so contributing to it has been a good excuse to spend real time in a language I'm less fluent in than Ruby or Typescript. I've sent a few small PRs over, configurable highlight colors, a vim navigation mode, a filter input bug fix, but the one worth writing about is the one I opened this week.
+## Gaps
 
-## The problem
-
-My pane layout from the [last post](/2026/08/15/tmuxinator-templates/) has a Claude Code pane in it, and that's not unusual for me anymore, most of my sessions have an agent running in one pane or another. Which is great until you have six or seven sessions going and tmux.expose is showing all of them in the same flat, alphabetical grid regardless of what's actually happening inside them. One agent might be three minutes into a task. Another finished and is sitting there waiting on me. Another hit a permission prompt and has been stuck for twenty minutes because I haven't looked at that pane. The grid doesn't know the difference, so I don't either, until I manually click through everything.
+My pane layout from the [last post](/2026/08/15/tmuxinator-templates/) has a Claude Code pane in it, and that's not unusual for me anymore, most of my sessions have at least one agent running in a pane or a window. Which is great until you have six or seven sessions going and it's hard to know which agent is awaiting on you, which one is still working and which agent is done.  Before my PR tmux.expose was showing all of them in the same flat, alphabetical grid regardless of what's actually happening inside them. One agent might be three minutes into a task. Another finished and is sitting there waiting on me. Another hit a permission prompt and has been stuck for twenty minutes because I haven't looked at that pane. The grid doesn't know the difference, so I don't either, until I manually click through everything.
 
 That's a bad way to find out an agent has been blocked on you for twenty minutes.
 
@@ -73,4 +70,4 @@ The gif above is two single-pane demo sessions, but a session with more than one
 
 ![tmux.expose agent status](https://github.com/user-attachments/assets/eb1408d5-f868-4a09-bdce-0de87a1f36ce)
 
-The PR's still open as I'm writing this, waiting on review, but I've been running it locally for a few days and I've stopped tabbing through sessions to find the one that's stuck. That's the whole point of contributing to a tool you actually use every day, you're not guessing what would be useful, you already know because you were just annoyed by its absence an hour ago.
+[It's merged now](https://github.com/cesarferreira/tmux.expose/pull/6), and I've stopped tabbing through sessions to find the one that's stuck. That's the whole point of contributing to a tool you actually use every day, you're not guessing what would be useful, you already know because you were just annoyed by its absence an hour ago.  Give it a go and let me know what you think!
