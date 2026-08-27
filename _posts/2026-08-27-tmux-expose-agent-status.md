@@ -41,25 +41,38 @@ Wiring it into Claude Code is just hooks in `~/.claude/settings.json`:
 {
   "hooks": {
     "UserPromptSubmit": [
-      { "hooks": [{ "type": "command", "command": "tmux-expose agent-status working" }] }
+      {
+        "hooks": [
+          { "type": "command", "command": "tmux-expose agent-status working" }
+        ]
+      }
     ],
     "Stop": [
-      { "hooks": [{ "type": "command", "command": "tmux-expose agent-status waiting" }] }
+      {
+        "hooks": [
+          { "type": "command", "command": "tmux-expose agent-status waiting" }
+        ]
+      }
     ],
     "Notification": [
       {
         "matcher": "permission_prompt",
-        "hooks": [{ "type": "command", "command": "tmux-expose agent-status attention" }]
+        "hooks": [
+          { "type": "command", "command": "tmux-expose agent-status attention" }
+        ]
       }
     ],
     "SessionEnd": [
       {
         "matcher": "",
-        "hooks": [{ "type": "command", "command": "tmux-expose agent-status clear" }]
+        "hooks": [
+          { "type": "command", "command": "tmux-expose agent-status clear" }
+        ]
       }
     ]
   }
 }
+
 ```
 
 That's it, no separate script to write or distribute, just four hooks pointed at a binary that's already on `PATH`.
