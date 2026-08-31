@@ -3,6 +3,7 @@ layout: post
 title: What actually happens when you tap "dispute this charge"
 series: payments-disputes
 series_title: Payments Disputes
+series_url: /payments/#disputes
 series_order: 1
 ---
 

@@ -7,7 +7,7 @@ layout: default
   <span class="post-date">{{ page.date | date_to_string }}</span>
   {% if page.series %}
     {% assign series_posts = site.posts | where: "series", page.series %}
-    <p class="series-nav">Part {{ page.series_order }} of {{ series_posts.size }} in <a href="/series/{{ page.series }}/">{{ page.series_title | default: page.series }}</a></p>
+    <p class="series-nav">Part {{ page.series_order }} of {{ series_posts.size }} in <a href="{{ page.series_url }}">{{ page.series_title | default: page.series }}</a></p>
   {% endif %}
   {{ content }}
 </div>
