@@ -19,9 +19,9 @@
   <meta property="og:type" content="{% if page.layout == 'post' %}article{% else %}website{% endif %}">
   <meta property="og:title" content="{{ page.title | default: site.title }}">
   <meta property="og:description" content="{{ page.excerpt | strip_html | strip_newlines | truncate: 200 | default: site.description | strip_html }}">
-  <meta property="og:url" content="{{ site.baseurl }}{{ page.url | remove_first: '/' }}">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
   {% if page.image %}
-  <meta property="og:image" content="{{ site.baseurl }}{{ page.image }}">
+  <meta property="og:image" content="{{ page.image | absolute_url }}">
   <meta name="twitter:card" content="summary_large_image">
   {% else %}
   <meta name="twitter:card" content="summary">
@@ -31,15 +31,15 @@
   <meta name="google-site-verification" content="eXEGVUfVv87FtD3i1vkgW5OMjWuAbQRDhOoJHw7cAHk" />
 
   <!-- CSS -->
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/poole.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}public/css/hyde.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/poole-dracula.css">
-  <link rel="stylesheet" href="{{ site.baseurl }}assets/css/poole-dracula-syntax.css">
+  <link rel="stylesheet" href="{{ '/public/css/poole.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/public/css/hyde.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/poole-dracula.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/poole-dracula-syntax.css' | relative_url }}">
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=PT+Sans:400,400italic,700|Abril+Fatface">
 
   <!-- Icons -->
-  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ site.baseurl }}public/apple-touch-icon-144-precomposed.png">
-                                 <link rel="shortcut icon" href="{{ site.baseurl }}public/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" sizes="144x144" href="{{ '/public/apple-touch-icon-144-precomposed.png' | relative_url }}">
+                                 <link rel="shortcut icon" href="{{ '/public/favicon.ico' | relative_url }}">
 
   <!-- RSS -->
   <link rel="alternate" type="application/rss+xml" title="RSS" href="/atom.xml">

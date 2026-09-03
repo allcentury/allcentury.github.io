@@ -9,7 +9,8 @@ permalink:        pretty
 title:            AR
 tagline:          "Anthony Ross' Blog"
 description:      'An engineer (and manager) at Brex focusing on Fintech.  <br><3 automated tests and pair programming. Find me at <a href="http://github.com/allcentury" target="_blank">@allcentury</a>.'
-baseurl:          "https://allcentury.github.io/"
+url:              "https://allcentury.github.io"
+baseurl:          ""
 
 author:
   name:           'Anthony Ross'
@@ -27,3 +28,4 @@ remote_theme: allcentury/poole-dracula
 plugins:
   - jekyll-paginate
   - jekyll-remote-theme
+  - jekyll-sitemap
