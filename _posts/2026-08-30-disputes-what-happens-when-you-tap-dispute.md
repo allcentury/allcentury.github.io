@@ -7,7 +7,7 @@ series_url: /payments/#disputes
 series_order: 1
 ---
 
-I've spent the last 10 years in fintech, focused on credit card payments (Braintree, Brex) and banking rails (Brex, Venmo). I'm going to write a series on topics I've spent a lot of time on, and this one is specifically on disputes, some of it [patented work](https://patents.google.com/patent/US20240289807A1/en) from my time as a staff engineer and engineering manager on the disputes team at Braintree.
+Hey, if you're new here, I'm Anthony Ross. I've spent the last 10+ years working in fintech and ecommerce, focused on credit card payments (Braintree, Brex) and banking rails (Brex, Venmo). I'm going to write a series on topics I've spent a lot of time on, and this one is specifically on disputes, some of it [patented work](https://patents.google.com/patent/US20240289807A1/en) from my time as a staff engineer and engineering manager on the disputes team at Braintree.
 
 I recently had to dispute a charge that was clearly fraudulent, someone in South Korea had used my credit card to take cash out of an ATM. So, I thought I'd walk through the technical pieces today, the APIs and systems involved, from the dispute itself to all the money movements it triggers.
 

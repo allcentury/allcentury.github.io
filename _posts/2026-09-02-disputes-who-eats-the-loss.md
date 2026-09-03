@@ -7,19 +7,19 @@ series_url: /payments/#disputes
 series_order: 2
 ---
 
-[In my last post](/2026/08/30/disputes-what-happens-when-you-tap-dispute/) I walked through what happens the moment you tap dispute, the five parties, the fraud vs. everything-else fork, how much time everyone actually has, etc. This one answers the question that actually matters to a merchant: once the dispute lands, who pays for it? or rather, who pays and _who gets paid_...
+Hey, if you're new here, I'm Anthony Ross. I've spent the last 10+ years working in fintech (Brex + Braintree/Venmo). [In my last post](/2026/08/30/disputes-what-happens-when-you-tap-dispute/) I walked through what happens the moment you tap dispute, the five parties, the fraud vs. everything-else fork, how much time everyone actually has, etc. This one answers the question that actually matters to a merchant: once the dispute lands, who pays for it? or rather, who pays and _who gets paid_ and _where did all my money go_...
 
-The answer isn't "the person who did something wrong." It's usually "whoever has the weaker evidence" which is a very different thing, and it's why disputes are so expensive.
+The answer isn't "the person who did something wrong." It's usually "whoever has the weaker evidence or tech" which is a very different thing, and it's why disputes are so expensive.
 
 ## Card-present fraud: the EMV liability shift
 
-If you've ever wondered why every card terminal on earth suddenly wanted you to dip your chip instead of swipe, this is why. [EMV](https://www.emvco.com/) stands for Europay, Mastercard, and Visa, the three companies that created the chip standard, and the rule, in plain terms, is that liability falls on whichever side is using the weaker technology.
+If you've ever wondered why every card terminal on earth suddenly wanted you to insert your chip instead of swipe, this is why. [EMV](https://www.emvco.com/) stands for Europay, Mastercard, and Visa, the three companies that created the chip standard, and the rule, in plain terms, is that liability falls on whichever side is using the weaker technology.
 
-- Merchant doesn't support chip, or has a chip reader but processes it as a swipe anyway, and the transaction turns out fraudulent, the merchant eats it - everytime.
-- Merchant properly dips a chip-enabled terminal, but the card itself is an old mag-stripe-only card, the issuer eats it (usually).
+- When a Merchant doesn't support chip, or has a chip reader but processes it as a swipe anyway, and the transaction turns out fraudulent, the merchant eats it - everytime.
+- When a Merchant has a chip-enabled terminal, but the card itself is an old mag-stripe-only card with no chip to insert, so it gets swiped instead, the issuer eats it (usually).
 - Both sides are chip-compliant and the transaction still turns out to be counterfeit fraud (the chip got cloned some other way), the issuer is typically still on the hook. Neither party did anything wrong, so the loss falls back to whoever's supposed to be backstopping fraud in the first place.
 
-That's a genuinely elegant piece of policy design, actually, it doesn't try to figure out who's at fault, it just makes upgrading your security the economically rational move for everyone. Once EMV adoption crossed a threshold, this stopped being a live problem for most merchants.  The schemes (Visa, Mastercard, etc) know how to incentivize fraud measures, by pushing the cost back to the weakest link in the payments dance.
+That's a genuinely elegant piece of policy design, actually, it doesn't try to figure out who's at fault, it just makes upgrading your security the economically rational move for everyone. Once EMV adoption crossed a threshold, this stopped being a live problem for most merchants.  The schemes (Visa, Mastercard, etc) know how to incentivize fraud measures, by pushing the cost back to the weakest link in the payments chain.
 
 ## Failed to deliver: the one that actually hurts
 
