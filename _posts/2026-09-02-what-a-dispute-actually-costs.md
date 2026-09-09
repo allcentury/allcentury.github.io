@@ -5,6 +5,8 @@ series: payments-disputes
 series_title: Payments Disputes
 series_url: /payments/#disputes
 series_order: 2
+redirect_from:
+  - /2026/09/02/disputes-who-eats-the-loss/
 ---
 
 Hey, if you're new here, I'm Anthony Ross. I've spent the last 10+ years working in fintech (Brex + Braintree/Venmo). [In my last post](/2026/08/30/disputes-what-happens-when-you-tap-dispute/) I walked through what happens the moment you tap dispute, the five parties, the fraud vs. everything-else fork, how much time everyone actually has, etc. This one answers the question that actually matters to a merchant: once the dispute lands, who pays for it? or rather, who pays and _who gets paid_ and _where did all my money go_...
