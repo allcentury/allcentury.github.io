@@ -11,7 +11,7 @@ redirect_from:
 
 Hey, if you're new here, I'm Anthony Ross. I've spent the last 10+ years working in fintech (Brex + Braintree/Venmo). [In my last post](/2026/08/30/disputes-what-happens-when-you-tap-dispute/) I walked through what happens the moment you tap dispute, the five parties, the fraud vs. everything-else fork, how much time everyone actually has, etc. This one answers the question that actually matters to a merchant: once the dispute lands, who pays for it? or rather, who pays and _who gets paid_ and _where did all my money go_...
 
-The answer isn't "the person who did something wrong." It's usually "whoever has the weaker evidence or tech" which is a very different thing, and it's why disputes are so expensive.
+The answer to who loses isn't "the person who did something wrong." It's usually "whoever has the weaker evidence or tech" which is a very different thing, and it's why disputes are so expensive.
 
 ## Proof of Delivery
 
