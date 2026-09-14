@@ -3,6 +3,9 @@ _gh_pages
 _site
 .ruby-version
 
+# Local AI assistant notes, not for the public repo
+CLAUDE.md
+
 # Numerous always-ignore extensions
 *.diff
 *.err

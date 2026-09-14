@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Why a dispute costs $229 on a $129 pair of shoes"
+title: "What a dispute actually costs"
 series: payments-disputes
 series_title: Payments Disputes
 series_url: /payments/#disputes
@@ -9,27 +9,41 @@ redirect_from:
   - /2026/09/02/disputes-who-eats-the-loss/
 ---
 
-Hey, if you're new here, I'm Anthony Ross. I've spent the last 10+ years working in fintech (Brex + Braintree/Venmo). [In my last post](/2026/08/30/disputes-what-happens-when-you-tap-dispute/) I walked through what happens the moment you tap dispute, the five parties, the fraud vs. everything-else fork, how much time everyone actually has, etc. This one answers the question that actually matters to a merchant: once the dispute lands, who pays for it? or rather, who pays and _who gets paid_ and _where did all my money go_...
+Hey, if you're new here, I'm Anthony Ross. I've spent the last 10+ years working in fintech (Brex + Braintree/Venmo). [In my last post](/2026/08/30/disputes-what-happens-when-you-tap-dispute/) I walked through what happens the moment you tap dispute, the five parties, the fraud vs. everything-else fork, how much time everyone actually has, etc. This one answers the question that actually matters to a merchant: once the dispute lands, who pays for it, and how much.
 
 The answer to who loses isn't "the person who did something wrong." It's usually "whoever has the weaker evidence or tech" which is a very different thing, and it's why disputes are so expensive.
 
-## Proof of Delivery
+## Proof of delivery
 
 A "I never received the goods" dispute is very common, especially for e-commerce companies and the dispute is extra costly because there's no liability-shift rule for it and no clean policy answer, just evidence or the lack of it. If you can't prove delivery, you lose, full stop, regardless of whether the customer is telling the truth or not.
 
-Here's what that actually costs. Say you sold a pair of shoes for $129, shipping costs you $11, and your card processing fee was 3%, $3.87. A dispute comes in for the full $129, and you don't have delivery evidence, so you lose. Here's the damage:
+Here's what that actually costs. Say you sold a pair of shoes for $129, shipping costs you $11, and your card processing fee was 3%, $3.87. If that sale goes through clean, here's your profit:
 
 ```
-lost sale, reversed by the chargeback    $129.00
-shipping, already paid, gone              $11.00
-card fee, not refunded on a chargeback     $3.87
-cost of the shoes, gone                   $70.00
-flat dispute fee, charged either way      $15.00
+revenue                                   $129.00
+cost of the shoes                         -$70.00
+shipping                                  -$11.00
+card processing fee                        -$3.87
 ------------------------------------------------
-total loss                               $228.87
+profit                                     $44.13
 ```
 
-$228.87 lost on a $129 sale, 1.77x the original transaction, and that's a mild case. Lower margin goods hurt worse and with enough of these, your acquirer will put you into a monitoring program that can raise your acquiring rate + disptue fees. The chargeback fee alone is worth calling out, it's non-refundable even if the merchant fights the dispute and wins later. Winning gets you your $129 back. It does not get you your $15 back, and on some smaller transactions, $15 might be greater than your actual margin.
+Now a dispute comes in, and you don't have delivery evidence, so you lose. The chargeback claws back the full $129, not the $125.13 you actually netted, the processor doesn't hand back their cut either. You already spent the shipping, you never get the shoes back, and there's a flat dispute fee on top of all of it:
+
+```
+cost of the shoes, gone                   -$70.00
+shipping, already spent                   -$11.00
+card processing fee, not refunded          -$3.87
+flat dispute fee, charged either way      -$15.00
+------------------------------------------------
+net loss                                  -$99.87
+```
+
+The number that actually matters is the swing between those two outcomes, what the dispute cost you relative to the sale just working, $144.00. That's more than the sale price itself.
+
+> Correction: an earlier version of this post added the cost of the shoes on top of the reversed sale price and put the total loss at $228.87. That's wrong, I had miscalculated it, the shoes are already inside the $129 that got reversed, not a separate loss stacked on top of it.
+
+With enough of these, your acquirer will put you into a monitoring program that can raise your processing rate and dispute fees on top of everything else. The dispute fee itself is worth calling out, it's non-refundable even if the merchant fights the dispute and wins later. Winning gets you your $129 back. It does not get you your $15 back, and on some smaller transactions, $15 might be more than your entire margin.
 
 ## Card-present fraud: the EMV liability shift
 
@@ -43,6 +57,6 @@ That's a genuinely elegant piece of policy design, actually, it doesn't try to f
 
 ## Why non-delivery is the one that stays expensive
 
-The EMV shift is a policy lever, upgrade your tech and the risk moves off you. Non-delivery disputes don't have that lever. The only thing standing between you and this $228.87 problem is whether you can produce a delivery confirmation, a signature, tracking that actually shows it arrived, something. No evidence means no defense and it doesn't matter that you actually shipped the shoes.
+The EMV shift is a policy lever, upgrade your tech and the risk moves off you. Non-delivery disputes don't have that lever. The only thing standing between you and that $144 swing is whether you can produce a delivery confirmation, a signature, tracking that actually shows it arrived, something. No evidence means no defense and it doesn't matter that you actually shipped the shoes.
 
 That's the setup for the next post. Merchants aren't defenseless here, they can fight back with evidence, and what actually counts as evidence, what doesn't, and why most merchants don't bother even when they have a winning case, is where representment comes in.
