@@ -9,7 +9,7 @@ redirect_from:
   - /2026/09/02/disputes-who-eats-the-loss/
 ---
 
-Hey, if you're new here, I'm Anthony Ross. I've spent the last 10+ years working in fintech (Brex + Braintree/Venmo). [In my last post](/2026/08/30/disputes-what-happens-when-you-tap-dispute/) I walked through what happens the moment you tap dispute including the five parties involved. This post is more targeted on what happens once a dispute lands, who pays for it, and why.
+Hey, if you're new here, I'm Anthony Ross. I've spent the last 10+ years working in fintech (Brex + Braintree/Venmo). The views expressed here are my own and not necessarily my employer's. [In my last post](/2026/08/30/disputes-what-happens-when-you-tap-dispute/) I walked through what happens the moment you tap dispute including the five parties involved. This post is more targeted on what happens once a dispute lands, who pays for it, and why.
 
 tldr - it's typically whoever has the weaker evidence or tech, that loses the dispute.
 

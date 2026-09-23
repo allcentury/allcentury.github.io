@@ -8,7 +8,7 @@ series_order: 3
 published: false
 ---
 
-Hey, if you're new here, I'm Anthony Ross. I've spent the last 10+ years working in fintech and ecommerce, specifically on disputes at Braintree from 2017-2020. [Last post](/2026/09/02/what-a-dispute-actually-costs/) I walked through the actual costs of buying and selling shoes online, and what a dispute actually costs on top of that. This post is the other half of that story: what evidence gives merchants their best chance to win it back.
+Hey, if you're new here, I'm Anthony Ross. I've spent the last 10+ years working in fintech and ecommerce, specifically on disputes at Braintree from 2017-2020. The views expressed here are my own and not necessarily my employer's. [Last post](/2026/09/02/what-a-dispute-actually-costs/) I walked through the actual costs of buying and selling shoes online, and what a dispute actually costs on top of that. This post is the other half of that story: what evidence gives merchants their best chance to win it back.
 
 ## Evidence isn't generic
 

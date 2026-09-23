@@ -6,7 +6,7 @@ image: public/imgs/mux-og.png
 
 I've used [tmuxinator](https://github.com/tmuxinator/tmuxinator) for years to spin up a tmux session with the windows and panes I want already laid out - editor, server, scratch, whatever the project needs. My problem was that I only ever had one config, `~/.tmuxinator.yml`, and I'd hand edit it every time I switched projects. New repo, same dance - open the yml, rename windows, change the root path, remember what I changed last time so I could change it back. That's not automation, that's just moving the manual work somewhere else.  The benefit here is every project I have is configured this way so when I `cd` into something, I simply run `mux` and I have everything ready to go.
 
-This is going to be a two part post. Today is the simple case - one repo, one tmux session, no monorepo complexities. Part 2 will cover how I handle this at Brex where a single monorepo has multiple services and each one needs its own layout.
+This is going to be a two part post. Today is the simple case - one repo, one tmux session, no monorepo complexities. Part 2 will cover how I handle this in a monorepo with multiple services, where each one needs its own layout.
 
 ## The idea
 
