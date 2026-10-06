@@ -3,7 +3,7 @@ layout: post
 title: Bookend leadership
 ---
 
-In an effort to avoid the "hey, can we talk about your PR for a minute", which then dovetails into a 10 person meeting on a project you thought was narrowly scoped, I'm sharing a framework I use to help my senior engineers manage their time.  I call it bookend leadership, this idea that as a senior member of a team, you have the most impact at the beginning and end of a project.
+In an effort to avoid the "hey, can we talk about your PR for a minute", which then dovetails into a 10 person meeting on a project you thought was narrowly scoped, I'm sharing a framework I use to help my senior engineers manage their time.  I call it bookend leadership, the idea is faily simple, I think as a senior you have the most impact at the beginning and end of a project.
 
 <svg viewBox="0 0 480 205" width="100%" style="max-width:480px;display:block;margin:1.5rem auto;" font-size="16" role="img" aria-label="Effort over time drawn as a shelf: two tall bookends at design and release, with short books for the PRs of the build in between">
   <path d="M28,152 V30 M22,38 L28,30 L34,38" fill="none" stroke="#6272a4" stroke-width="1.5"/>
