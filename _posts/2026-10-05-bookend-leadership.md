@@ -3,9 +3,9 @@ layout: post
 title: Bookend leadership
 ---
 
-In an effort to avoid the "hey, can we talk about your PR for a minute", which then dovetails into a 10 person meeting on a project you thought was narrowly scoped, I'm sharing a framework I use to help my senior engineers manage their time (and stress levels).  I call it bookend leadership, the idea is fairly simple, I think as a senior you have the most impact on someone else's work at the beginning and end of a project.
+In an effort to avoid the "hey, can we talk about your PR for a minute", which then dovetails into a 10 person meeting on a project you thought was narrowly scoped, I'm sharing a framework I use to help my senior engineers manage their time (and stress levels).  I call it bookend leadership, the idea is fairly simple, I think as a senior you have the most impact on someone else's work at the beginning and end of their project.
 
-<svg viewBox="0 0 480 205" width="100%" style="max-width:480px;display:block;margin:1.5rem auto;" font-size="16" role="img" aria-label="Effort over time drawn as a shelf: two tall bookends at design and release, with short books for the PRs of the build in between">
+<svg viewBox="0 0 480 205" width="100%" style="max-width:480px;display:block;margin:1.5rem auto;" font-size="16" role="img" aria-label="Impact over time drawn as a shelf: two tall bookends at design and release, with short books for the PRs of the build in between">
   <path d="M28,152 V30 M22,38 L28,30 L34,38" fill="none" stroke="#6272a4" stroke-width="1.5"/>
   <path d="M26,150 H460 M452,144 L460,150 L452,156" fill="none" stroke="#6272a4" stroke-width="1.5"/>
   <rect x="98" y="116" width="26" height="34" rx="2" fill="#44475a" stroke="#6272a4"/>
@@ -26,13 +26,13 @@ In an effort to avoid the "hey, can we talk about your PR for a minute", which t
   <text x="418" y="95" text-anchor="middle" dominant-baseline="central" fill="#282a36" font-weight="bold" font-size="14" letter-spacing="1" transform="rotate(-90 418 95)">Release</text>
   <text x="240" y="174" text-anchor="middle" fill="#6272a4">build</text>
   <text x="240" y="198" text-anchor="middle" fill="#6272a4" font-size="13">time</text>
-  <text x="14" y="95" text-anchor="middle" fill="#6272a4" font-size="13" transform="rotate(-90 14 95)">effort</text>
+  <text x="14" y="95" text-anchor="middle" fill="#6272a4" font-size="13" transform="rotate(-90 14 95)">impact</text>
 </svg>
 
 During the beginning of someone else's project, your involvement in planning and design (both product and engineering) gives you a chance to help set direction and call attention to areas you're concerned about. Later on, if you see a discrepancy in a PR, you can point back to the design document: "I thought we landed on doing X?".  If the code changed but the design doc didn't, this is a good opportunity to meet w/ the DRI and regain context (and confidence) in this new path.
 
 In the middle of someone else's project, your job is much simpler. PR and code changes shouldn't surprise you.  Rarely will you need to block a code change or be the bottleneck on implementation because you've already agreed to the design.  Your job here is to make sure what's being implemented meets your bar and the agreed upon contracts.  It also prevents re-litigation on big ideas that can implode a project and people's time.  The reduced time and stress this produces is a welcome change because before this, senior engineers would scour PRs looking for the next big issue, where now they're looking for big discrepancies from agreed upon plans.  It's a much different day to day, and it cuts down the FUD for everyone, not just the seniors, since the DRI isn't bracing for a surprise redesign in review.
 
-In the end, when the feature is nearing completion and the team is holding bug bashes or release readiness reviews, this is also a great time for you to jump in.  Does this release meet your bar?  You can put yourself in the DRI's shoes and ask all the "what if" questions.  If the project does meet your bar, great, if it doesn't what would you want to see changed to get there?  This is both a mentorship opportunity and a confidence building exercise for everyone involved.
+In the end, when the feature is nearing completion and the team is holding bug bashes or release readiness reviews, this is also a great time for you to jump back in with opinions and feedback.  Does this release meet your bar?  You can put yourself in the DRI's shoes and ask all the "what if" questions.  If the project does meet your bar, great. If it doesn't, what would you want to see changed to get there?  This is both a mentorship opportunity and a way for your team to build confidence in what they're shipping.
 
-One of the reasons you're senior is because people seek and trust your judgement - with this approach, you can use your time and the DRI's time even better.
+One of the reasons you're a senior is because people seek and trust your judgement, and I think with this approach you're maximizing your time (and energy) and everyone else's.
